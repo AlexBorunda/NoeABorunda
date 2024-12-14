@@ -53,11 +53,13 @@ It defines an animation called logo-spin that rotates an element from 0 degrees 
 @media is a CSS at-rule that applies styles based on the media features of the device or browser.
 It targets elements with the class name logo that are the second child of their parent element.
 */
+/*
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
+*/
 
 /*
 .card is a class selector that targets elements with the class name card.
@@ -73,4 +75,23 @@ It sets the color of the elements to a light gray.
 */
 .read-the-docs {
   color: #888;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap : 5rem;
+}
+
+/*
+.profile-picture is a class selector that targets elements with the class name profile-picture.
+It sets the width, height, border radius, object fit, and object position of the elements.
+*/
+.profile-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center top;
 }

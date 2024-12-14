@@ -1,3 +1,7 @@
+body {
+  background-color: lightblack;
+}
+
 /*
 :root is a CSS pseudo-class selector that targets the root element of the document.
 It sets the default font family, line height, font weight, color scheme, color, and background color of the document.
