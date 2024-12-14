@@ -1,3 +1,7 @@
+/* 
+#root is the root element of the React application. 
+It is the parent of all other elements in the application. 
+*/
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,19 +9,37 @@
   text-align: center;
 }
 
+/*
+.logo is a class selector that targets elements with the class name logo.
+It sets the height and padding of the elements.
+*/
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
+/*
+.logo:hover is a pseudo-class selector that targets elements with the class name logo when they are being hovered over by the mouse cursor.
+It sets a CSS filter property that applies a drop shadow effect to the element.
+*/
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
+/*
+/logo.react:hover is a compound selector that targets elements with both the class name logo and the class name react when they are being hovered over by the mouse cursor.
+It sets a CSS filter property that applies a drop shadow effect to the element.
+*/
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/*
+@keyframes is a CSS at-rule that defines the behavior of an animation sequence.
+It defines an animation called logo-spin that rotates an element from 0 degrees to 360 degrees.
+*/
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -27,16 +49,28 @@
   }
 }
 
+/*
+@media is a CSS at-rule that applies styles based on the media features of the device or browser.
+It targets elements with the class name logo that are the second child of their parent element.
+*/
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
+/*
+.card is a class selector that targets elements with the class name card.
+It sets padding around the elements.
+*/
 .card {
   padding: 2em;
 }
 
+/*
+.read-the-docs is a class selector that targets elements with the class name read-the-docs.
+It sets the color of the elements to a light gray.
+*/
 .read-the-docs {
   color: #888;
 }
