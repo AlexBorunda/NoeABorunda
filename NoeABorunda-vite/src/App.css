@@ -82,6 +82,59 @@ It sets the color of the elements to a light gray.
   align-items: center;
   justify-content: center;
   gap : 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-header-text h1 {
+  margin-bottom: 1  rem;
+}
+
+.profile-header-text h2 {
+  margin-top: 0.5rem;
+}
+
+.profile-header-text a{
+  color: white;
+  text-decoration: underline;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: column ;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 3.25rem;
+  outline: none;
+  border: none;
+}
+
+.logos-container-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none; 
+  outline: none;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logos-container-item img {
+  border: none;
+  outline: none;
+}
+
+.logos-container-item h2 {
+  margin-left: auto;
+  outline: none;
+  border: none;
 }
 
 /*

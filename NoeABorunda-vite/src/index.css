@@ -1,5 +1,9 @@
+/*
+body is a type selector that targets the body element of the document.
+It sets the margin, display, and alignment of the body element.
+*/
 body {
-  background-color: lightblack;
+background-color: #0E0C0A;
 }
 
 /*
