@@ -1,0 +1,106 @@
+/*
+body is a type selector that targets the body element of the document.
+It sets the margin, display, and alignment of the body element.
+*/
+body {
+background-color: #0E0C0A;
+}
+
+/*
+:root is a CSS pseudo-class selector that targets the root element of the document.
+It sets the default font family, line height, font weight, color scheme, color, and background color of the document.
+*/
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+a & a:hover are type selectors that target anchor elements and anchor elements being hovered over by the mouse cursor.
+It sets the color of the elements to a light blue when they are being hovered over by the mouse cursor.
+*/
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/*
+body is a type selector that targets the body element of the document.
+It sets the margin, display, and alignment of the body element.
+*/
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/*
+h1 is a type selector that targets heading elements of level 1.
+It sets the font size and line height of the elements.
+*/
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/*
+button & button:hover are type selectors that target button elements and button elements being hovered over by the mouse cursor.
+It sets the border radius, border, padding, font size, font weight, font family, background color, and cursor of the elements.
+
+button:hover sets the border color of the elements to a light blue when they are being hovered over by the mouse cursor.
+It sets the transition of the border color to 0.25 seconds.
+
+button:focus & button:focus-visible are pseudo-class selectors that target button elements when they are focused on by the user.
+It sets the outline of the elements to a light blue when they are focused on by the user.
+*/
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/*
+@media is a CSS at-rule that applies styles based on the media features of the device or browser.
+It targets elements with the class name logo that are the second child of their parent element.
+*/
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
