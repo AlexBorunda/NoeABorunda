@@ -197,20 +197,36 @@ img {
 
 /* Media Queries */
 /* Target All iPads (Portrait and Landscape) */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
-    color: #ff5733; /* Example: Bright orange color for testing */
+    color: #ff5733;
   }
 
-  h1, h2, p {
-    color: black; /* Example: Dark red for testing */
+  h1, h2 {
+    color: black;
   }
+
+  p {
+    color: black;
+    font-size: 1rem;
+  }
+
   .profile-header {
-    width: 175px;
-    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 90%; /* Allow it to scale with the screen */
+    margin: 0 auto;
+    padding: 1rem;
+    flex-wrap: wrap; /* Make items wrap if needed */
+  }
+
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Retain circular shape */
+    object-fit: cover;
   }
 }
 
@@ -257,6 +273,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
   .logos-container-item h2 {
     color: black;
+  }
+
+  p {
+    font-size: 0.75rem;
   }
 }
 
