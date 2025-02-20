@@ -1,7 +1,7 @@
 {/* import { useState } from 'react' */}
-import linkedinLogo from './assets/linkedin-white.png'
-import coloradoschoolofminesLogo from './assets/coloradoschoolofmines-white.png'
-import githubLogo from './assets/github-white.png'
+import linkedinLogo from './assets/linkedin-black.png'
+import coloradoschoolofminesLogo from './assets/coloradoschoolofmines-black.png'
+import githubLogo from './assets/github-black.png'
 import profilePicture from './assets/profile.jpg'
 import './App.css'
 
@@ -49,7 +49,7 @@ function App() {
 
         {/* Link to Colorado school of mines website w/ mines legacy logo */}
         <div className="logos-container-item">
-          <a href="https://www.mines.edu/" target="_blank">
+          <a href="https://cs.mines.edu/" target="_blank">
             <img src={coloradoschoolofminesLogo} className="logo mines" alt="Colorado school of mines legacy logo" />
           </a>
           <h2>CS @ Mines</h2>

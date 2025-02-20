@@ -3,7 +3,8 @@ body is a type selector that targets the body element of the document.
 It sets the margin, display, and alignment of the body element.
 */
 body {
-background-color: #0E0C0A;
+background-color: ghostwhite;
+  color: black;
 }
 
 /*
@@ -103,4 +104,18 @@ It targets elements with the class name logo that are the second child of their 
   button {
     background-color: #f9f9f9;
   }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1, h2 {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
 }

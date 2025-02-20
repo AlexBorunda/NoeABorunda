@@ -1,6 +1,6 @@
-/* 
-#root is the root element of the React application. 
-It is the parent of all other elements in the application. 
+/*
+#root is the root element of the React application.
+It is the parent of all other elements in the application.
 */
 #root {
   max-width: 1280px;
@@ -92,7 +92,7 @@ It sets the color of the elements to a light gray.
 }
 
 .profile-header-text h1 {
-  margin-bottom: 1  rem;
+  margin-bottom: 1rem;
 }
 
 .profile-header-text h2 {
@@ -100,7 +100,7 @@ It sets the color of the elements to a light gray.
 }
 
 .profile-header-text a{
-  color: white;
+  color: black;
   text-decoration: underline;
 }
 
@@ -118,7 +118,7 @@ It sets the color of the elements to a light gray.
   display: flex;
   align-items: center;
   width: 100%;
-  border: none; 
+  border: none;
   outline: none;
   background: none;
   box-shadow: none;
@@ -148,3 +148,115 @@ It sets the width, height, border radius, object fit, and object position of the
   object-fit: cover;
   object-position: center top;
 }
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.logos-container-item {
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+/* Target All iPads (Portrait and Landscape) */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    color: #ff5733; /* Example: Bright orange color for testing */
+  }
+
+  h1, h2, p {
+    color: black; /* Example: Dark red for testing */
+  }
+  .profile-header {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0.25px;
+  }
+
+  .profile-header img {
+    margin-bottom: 0.25px;
+  }
+
+  .profile-header-text {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .profile-header-text h1, .profile-header-text h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .profile-picture {
+    width: 175px;
+    height: 175px;
+  }
+
+  .logos-container {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .logos-container-item h2 {
+    color: black;
+  }
+}
+
